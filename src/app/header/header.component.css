@@ -1,0 +1,36 @@
+.header{
+    box-shadow: 0 2px 15px 0 rgb(0 0 0 / 0%), 0 0px 23px 0 rgb(0 0 0 / 19%);
+
+    flex-direction: column;
+}
+.container{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+small{
+    font-size: 65%;
+}
+.cart-btn{
+    background-color: #f0f0f3;
+}
+.fa-shopping-cart{
+    color: #df13d3;
+}
+a{
+    text-decoration: none;
+}
+
+.cartDetails{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+}
+.cart{
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 9;
+}
+

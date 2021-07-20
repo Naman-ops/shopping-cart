@@ -1,0 +1,29 @@
+
+<app-header></app-header>
+
+<div class="cartPage py-5">
+    <div class="card ">
+        <div class="card-body">
+            <h5>
+                <strong> My Cart</strong>
+                <small>
+                    ({{totalCartds.length}} Item)
+                </small>
+               </h5>
+        </div>
+      </div>
+
+      <div class="pt-2">
+          <app-cart-item (productClicked)="totalCartds.pop()"  *ngFor="let cart of totalCartds"> </app-cart-item>
+      </div>
+      <div class="cartCheckout">
+          <div *ngIf="totalCartds.length==0">
+            <h5 class="text-center">No Items in your cart</h5>
+            <p class="text-center">Your favourite items are just a click away.</p>
+          </div>
+
+        <app-cart-checkout [totalCarts]="totalCartds.length"></app-cart-checkout>
+
+      </div>
+
+</div>

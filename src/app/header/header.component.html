@@ -1,0 +1,86 @@
+
+<!-- Header Bar start -->
+<div class="header">
+        <section class="container">
+
+            <div class="row no-gutters">
+                <div routerLink="/" class="col-md-2 col-4">
+                    <img src="/assets/images/logo.png" class="img-fluid">
+                </div>
+
+                <div class="col-md-8 col-4  align-self-center ">
+                    <a routerLink="/" class="px-3 d-none d-md-inline text-dark">Home</a>
+                    <a routerLink="/product-list" class="px-3 text-dark d-none d-md-inline">Product</a>
+                </div>
+                <div class="col-md-2 col-4 justify-content-end ">
+                    <div class="flex-column d-flex h-100 justify-content-end">
+                    <div class="d-none d-md-flex justify-content-end">
+                        <span routerLink="/login" class="px-2">
+                            <small>Signin</small>
+                            </span>
+                        <span routerLink="/register" class="px-2">
+                            <small>Register</small>
+                            </span>
+
+                    </div>
+                    <div class="h-100">
+                        <div (click)="showCart = !showCart" class="cart-btn  align-self-center d-md-flex d-none h-100">
+                            <p class=" px-lg-4 pl-2 py-2">
+                                <i class="fa fa-shopping-cart pr-2" aria-hidden="true"></i>
+                                0 Items
+                            </p>
+                        </div>
+
+                        <div routerLink="/cart" class="cart-btn  align-self-center d-md-none d-flex h-100">
+                            <p class=" pl-2  py-2">
+                                <i class="fa fa-shopping-cart pr-2" aria-hidden="true"></i>
+                                0 Items
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+                <div *ngIf="showCart" class="col-md-12 position-relative">
+                    <div (click)="showCart = !showCart" class="cart"></div>
+                    <div  class="cartDetails">
+                        <app-cart (productClicked)="showCart = !showCart"></app-cart>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div class="row no-gutters">
+                <div class="col-md-2 col-4">
+                    <img src="/assets/images/logo.png" class="img-fluid">
+                </div>
+
+                <div class="col-md-8   d-none d-md-flex align-self-center ">
+                    <a href="" class="px-3">Home</a>
+                    <a href="" class="px-3">Product</a>
+                </div>
+                <div class="col-md-2 col-8 justify-content-end d-flex ">
+                    <div class="d-flex flex-column">
+                    <div class="d-md-flex d-none justify-content-end pb-2">
+                        <a class="">
+                            <small>Signin</small>
+                            </a>
+                        <a class="pl-2">
+                            <small>Register</small>
+                            </a>
+                    </div>
+                    <div class="h-100">
+                        <div class="h-100 text-center d-flex align-self-center cart-btn  p-3">
+                            <i class="fa fa-shopping-cart pr-2" aria-hidden="true"></i>
+                            0 Items
+                    </div>
+                    </div>
+                </div>
+                </div>    
+            </div> -->
+        </section>
+    </div>
+<!-- Header Bar end -->
+
+
+
+

@@ -1,0 +1,30 @@
+.carts{
+    max-height: 400px;
+    overflow: auto;
+}
+
+.cart{
+    height: 85vh;
+    width: 600px;
+    background: #e0e0e0;
+}
+
+.fa{
+    cursor: pointer;
+}
+
+.btn{
+        background: #df13d3;
+
+}
+
+.proceedCard{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.emptyText{
+    margin-top: 100px;
+}

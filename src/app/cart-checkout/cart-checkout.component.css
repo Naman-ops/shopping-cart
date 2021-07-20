@@ -1,0 +1,22 @@
+
+
+@media screen and (max-width:576px) {
+    .proceedCard{
+        position: fixed;
+    }
+}
+@media screen and (min-width:576px) {
+    .proceedCard{
+        position: absolute;
+    }
+}
+.proceedCard{
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.btn{
+    background: #df13d3;
+
+}

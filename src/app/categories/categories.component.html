@@ -1,0 +1,25 @@
+<div class="container ">
+
+    <div>
+        <div [ngClass]="{'flex-row-reverse':indexOfelement % 2 == 0}"  class="row my-5 py-2 no-gutters flex-row-reverse" *ngFor="let category of categories.default;let indexOfelement=index">
+            <div class="col-md-3 col-6 align-self-center">
+                <img class="img-fluid" [src]="category.imageUrl">
+            </div>
+            <div class="col-md-9 col-6">
+                <!-- <h4 class="text-center">{{category.name}}</h4> -->
+                <!-- {{indexOfelement}} -->
+                <h4 class="text-center  d-none d-md-block">{{category.name}}</h4>
+                <h5 class="text-center  d-block d-md-none">{{category.name}}</h5>
+                <p class="text-center">
+                    <small>
+                        {{category.description}}</small>
+                    </p>
+                <div class="text-center">
+    
+                <button type="button" class="btns text-white px-3"><small>Explore {{category.key}}</small></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

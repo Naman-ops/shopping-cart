@@ -1,0 +1,11 @@
+.row{
+    /* box-shadow: 0 2px 15px 0 rgb(0 0 0 / 0%), 0 0px 23px 0 rgb(0 0 0 / 19%); */
+    box-shadow: 0px 4px 3px -4px grey;
+
+}
+
+.btns{
+    background: #df13d3;
+    border: none;
+    cursor: pointer;
+}

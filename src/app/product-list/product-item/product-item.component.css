@@ -1,0 +1,60 @@
+
+  .btns{
+    background-color:  #df13d3;
+    border: none;
+    font-weight: 500;
+}
+@media screen and (min-width:992px) {
+  
+    
+    .desc{
+        background-color: #d1d1d1;
+        font-size: 13px;
+        font-weight: 500;
+        height: 265px;
+    }
+    .mrpBuy{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .productCard{
+        position: relative;
+        height: 650px;
+        border: none;
+        border-bottom: 2px dashed silver;
+        margin-bottom: 50px;
+    }
+    
+    .productName{
+        min-height: 125px;
+        font-weight: 700;
+    }
+    
+    .mrp{
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .productName{
+        font-weight: 700;
+        height: 100px;
+        
+    }
+    .desc{
+        background-color: #d1d1d1;
+        font-size: 13px;
+        font-weight: 500;
+        height: 170px;
+        overflow: auto;
+    }
+    .productCard{
+        position: relative;
+        border: none;
+        border-bottom: 2px dashed silver;
+    }
+   
+}

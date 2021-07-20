@@ -1,0 +1,13 @@
+.fa{
+    cursor: pointer;
+}
+
+.btn{
+    height: 25px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #df13d3;
+    color: white;
+}

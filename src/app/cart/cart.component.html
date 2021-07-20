@@ -1,0 +1,56 @@
+
+<div class="cart position-relative ">
+<h4 class="d-flex bg-dark text-white p-2 justify-content-between">
+    <small *ngIf="totalCartds.length>0">
+      <strong>
+        My Cart({{totalCartds.length}} Item)
+      </strong> 
+    </small>
+    <small *ngIf="totalCartds.length==0">
+        <strong>
+          My Cart
+        </strong> 
+      </small>
+    <i class="fa fa-times" aria-hidden="true" (click)="productClicked.emit()"></i>
+
+    </h4>
+
+<div *ngIf="totalCartds.length==0" class="emptyText">
+  <h5 class="text-center">No Items in Your cart</h5>
+    <p class="text-center">Your Favourite items are just a click away.</p>
+
+</div>
+  
+    <!-- <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="/assets/images/products/fruit-n-veg/apple.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-10 d-flex flex-column">
+                    <h5>Apple - Washigton, Regular, 4 pcs</h5>
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex align-self-center">
+                            <button class="btn  rounded-circle">+</button>
+                            <span class="mx-2">1</span>
+                            <button class="rounded-circle btn ">-</button>
+                            <i class="fa fa-times ml-3" aria-hidden="true"></i>
+
+                            <span class="pl-3">Rs. 156</span>
+                        </div>
+                        <span>Rs. 156</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div> -->
+
+      <div class="carts">
+
+        <app-cart-item *ngFor="let cart of totalCartds" (productClicked)="totalCartds.pop()"></app-cart-item>
+
+      </div>
+ <app-cart-checkout [totalCarts]="totalCartds.length" (productClicked)="productClicked.emit()"></app-cart-checkout>
+
+    
+</div>
