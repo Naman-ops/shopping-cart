@@ -12,6 +12,7 @@ small{
 }
 .cart-btn{
     background-color: #f0f0f3;
+    cursor: pointer;
 }
 .fa-shopping-cart{
     color: #df13d3;
