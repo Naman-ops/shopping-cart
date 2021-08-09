@@ -20,6 +20,9 @@ small{
 a{
     text-decoration: none;
 }
+.cp{
+    cursor: pointer;
+}
 
 .cartDetails{
     position: absolute;
